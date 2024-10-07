@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marques eletronicos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            margin: 0;
+            padding: 20px;
+        }
+        h1{
+            color: gainsboro;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: blue;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: black;
+            color: white;
+        }
+        button {
+            padding: 20 px 30px;
+            background-color: black;
+            color: gray;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        #Eletronic{
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Bem vindo a Marques eletronicos</h1>
+    <h2>Escolha um item da loja</h2>
+    <table>
+        <thead>
+             <tr></tr>
+            <th>Codigo</th>
+            <th>Item</th>
+            <th>Preço</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Monitor</td>
+                <td>R$ 240,00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Teclado</td>
+                <td>R$ 120,00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mouse</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gabinete</td>
+                <td>R$ 1000,00</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Placa de vídeo</td>
+                <td>R$ 1400,00</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Memoria Ram</td>
+                <td>R$ 340,00</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>HD externo</td>
+                <td>R$ 500,00</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Fonte</td>
+                <td>R$ 300,00</td>
+            </tr>
+        </tbody>
+       
+    </table>
+    <h2>Chamar o Gerente</h2>
+    <button onclick="Gerente()">Chamar o Gerente</button>
+
+    <button onclick="pedir()">Compre a peça de eletronico que procura</button>
+    <div id="#Eletronic"></div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

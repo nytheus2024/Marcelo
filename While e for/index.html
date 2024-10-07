@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <h1>Escolha um número</h1>
+    <input type="number" id="numero" placeholder="Digite um numero">
+
+    <button onclick="contarWhile()">Contar com while</button>
+    <div id="resultadoWhile"></div>
+
+    <button onclick="contarfor">Contar com for</button>
+    <div id="resultadoFor"></div>
+
+    <script>
+        function contarWhile(){
+            const numero = parseInt(document.getElementById('numero').value);
+            let i = 1;
+            let resultado = '';
+
+            while (i <= numero){
+                resultado += i + '';
+                i++;
+            }
+            document.getElementById('resultadoWhile').innerText = resultado;
+
+        }
+        function contarfor() {
+            const numero = parseInt(document.getElementById('numero').value);
+            let resultado = '';
+
+            for (let i = 1; i <= numero; i++){
+                resultado += i + ' ';
+            }
+            document.getElementById('resultadoFor').innerText = resultado;
+        }
+    </script>
+
+</body>
+</html>
